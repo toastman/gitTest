@@ -3,14 +3,14 @@
 
   angular
     .module('module')
-    .controller('Controller', Controller);
+    .MyController('MyController', MyController);
 
-  Controller.$inject = ['dependencies'];
+  MyController.$inject = ['dependencies'];
 
   /* @ngInject */
-  function Controller(dependencies) {
+  function MyController(dependencies) {
     var vm = this;
-    vm.title = 'Controller';
+    vm.title = 'MyController';
 
     activate();
 
